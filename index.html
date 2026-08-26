@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secret Raksha Bandhan Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND MUSIC -->
+
+    <audio id="bgmusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+    <!-- ================= HACKER PAGE ================= -->
+
+    <div id="hackerPage" class="page active">
+
+        <div class="matrix"></div>
+
+        <div class="hackerBox">
+
+            <h1> OPERATION : Rakhi Special Cyber Criminal Detection 🕵️ </h1>
+
+            <p id="hackerText"></p>
+
+            <div class="progressBox">
+
+                <div id="progressBar"></div>
+
+            </div>
+
+            <p id="progressText">Initializing...</p>
+
+            <button id="startBtn" onclick="showLogin()">
+                ACCESS SECRET FILE 🔐
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LOGIN PAGE ================= -->
+
+    <div id="loginPage" class="page">
+
+        <div class="loginBox">
+
+            <h1>🔐 Secret Access</h1>
+
+            <p>Only one special person can enter...</p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter secret name"
+            >
+
+            <button onclick="checkLogin()">
+                UNLOCK ❤️
+            </button>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= QUIZ PAGE ================= -->
+
+    <div id="quizPage" class="page">
+
+        <div class="quizBox">
+
+            <h1>💖 Sister Quiz 💖</h1>
+
+            <h2 id="questionText"></h2>
+
+            <div id="optionsBox"></div>
+
+            <p id="quizMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= GIFT PAGE ================= -->
+
+    <div id="giftPage" class="page">
+
+        <div class="giftBox">
+
+            <h1>🎁 Choose Your Surprise 🎁</h1>
+
+            <p>Choose the special gift...</p>
+
+            <div class="giftButtons">
+
+                <button onclick="chooseGift('chocolate')">
+                    🍫 Chocolate
+                </button>
+
+                <button onclick="chooseGift('money')">
+                    💰 Money
+                </button>
+
+                <button onclick="chooseGift('love')">
+                    ❤️ Something Special
+                </button>
+
+            </div>
+
+            <p id="giftMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LOVE PAGE ================= -->
+
+    <div id="lovePage" class="page">
+
+        <div class="loveBox">
+
+            <div class="heartAnimation">
+                ❤️
+            </div>
+
+            <h1>Happy Raksha Bandhan 🌸</h1>
+
+            <h2>Dear Muski ❤️</h2>
+
+            <p>
+                No hacker can steal our memories...
+                <br><br>
+                No password can lock our bond...
+                <br><br>
+                No firewall can stop me from annoying you forever 😂
+                <br><br>
+                Because you are not just my sister...
+                <br><br>
+                You are one of the most special people in my life ❤️
+            </p>
+
+            <button onclick="openLetterPage()">
+                Open My Letter 💌
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LETTER PAGE ================= -->
+
+    <div id="letterPage" class="page">
+
+        <div class="letterPageContent">
+
+            <h1>💌 A Special Letter For You</h1>
+
+            <div class="envelope" id="envelope">
+
+                <div class="envelopeBack"></div>
+
+                <div class="letter">
+
+                    <h2>Dear Muski ❤️</h2>
+
+                    <p id="letterText"></p>
+
+                </div>
+
+                <div class="envelopeFront"></div>
+
+                <div class="flap"></div>
+
+            </div>
+
+
+            <!-- PHOTO SECTION -->
+
+            <div id="memorySection">
+
+                <h2>📸 Our Beautiful Memories 📸</h2>
+
+                <img
+                    id="gallery"
+                    src="photos/photo1.jpeg"
+                    alt="Our Beautiful Memories"
+                >
+
+                <p id="photoNumber">
+                    Memory 1 ❤️
+                </p>
+
+            </div>
+
+
+            <div class="letterButtons">
+
+                <button onclick="toggleMusic()">
+                    🎵 Music ON/OFF
+                </button>
+
+                <button onclick="showFinalPage()">
+                    Continue 🎆
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FINAL PAGE ================= -->
+
+    <div id="finalPage" class="page">
+
+        <div class="finalBox">
+
+            <div class="bigHeart">
+                ❤️
+            </div>
+
+            <h1>🌸 Happy Raksha Bandhan 🌸</h1>
+
+            <h2>The Best Sister In The World ❤️</h2>
+
+            <p>
+                This website was specially made only for you.
+                <br><br>
+                Every line of code,
+                every page,
+                every surprise,
+                and every memory...
+                <br><br>
+                was made with love ❤️
+                <br><br>
+                Thank you for being my sister.
+                <br><br>
+                I promise I will always be there for you.
+            </p>
+
+            <h2>Love You Forever Muski ❤️</h2>
+
+            <button onclick="restartWebsite()">
+                ❤️ Watch Again
+            </button>
+
+        </div>
+
+        <canvas id="fireworks"></canvas>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,739 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, sans-serif;
+
+    overflow-x:hidden;
+
+    background:#000;
+
+}
+
+.page{
+
+    display:none;
+
+    width:100%;
+
+    min-height:100vh;
+
+    padding:30px 15px;
+
+    text-align:center;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+}
+
+.page.active{
+
+    display:flex;
+
+}
+
+
+/* ================= HACKER PAGE ================= */
+
+#hackerPage{
+
+    background:#020403;
+
+    color:#00ff88;
+
+    overflow:hidden;
+
+}
+
+.matrix{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    opacity:.15;
+
+    pointer-events:none;
+
+    background-image:
+    linear-gradient(rgba(0,255,100,.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,100,.15) 1px, transparent 1px);
+
+    background-size:30px 30px;
+
+}
+
+.hackerBox{
+
+    width:min(700px,95%);
+
+    z-index:2;
+
+}
+
+.hackerBox h1{
+
+    color:#ffffff;
+
+    margin-bottom:30px;
+
+    font-size:clamp(28px,5vw,50px);
+
+}
+
+#hackerText{
+
+    min-height:80px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+}
+
+.progressBox{
+
+    width:100%;
+
+    height:15px;
+
+    background:#111;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin:30px 0 15px;
+
+}
+
+#progressBar{
+
+    width:0%;
+
+    height:100%;
+
+    background:#00ff88;
+
+    transition:width .3s;
+
+}
+
+#startBtn{
+
+    display:none;
+
+}
+
+
+/* ================= BUTTONS ================= */
+
+button{
+
+    border:none;
+
+    padding:14px 25px;
+
+    margin:10px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    background:#ff4f8b;
+
+    color:white;
+
+    transition:.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+button:hover{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ================= LOGIN ================= */
+
+#loginPage{
+
+    background:linear-gradient(135deg,#0d0d18,#2b1238);
+
+    color:white;
+
+}
+
+.loginBox{
+
+    width:min(450px,95%);
+
+    padding:40px 25px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.1);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.loginBox h1{
+
+    margin-bottom:20px;
+
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:20px 0;
+
+    border:none;
+
+    border-radius:25px;
+
+    font-size:17px;
+
+    text-align:center;
+
+}
+
+#loginMessage{
+
+    min-height:25px;
+
+}
+
+
+/* ================= QUIZ ================= */
+
+#quizPage{
+
+    background:linear-gradient(135deg,#ff8ab8,#ffc4d8);
+
+}
+
+.quizBox{
+
+    width:min(600px,95%);
+
+    background:white;
+
+    color:#4a1530;
+
+    padding:35px 20px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+#questionText{
+
+    margin:30px 0;
+
+}
+
+.optionButton{
+
+    display:block;
+
+    width:min(400px,90%);
+
+    margin:12px auto;
+
+}
+
+
+/* ================= GIFT ================= */
+
+#giftPage{
+
+    background:linear-gradient(135deg,#ffe29f,#ffa99f);
+
+}
+
+.giftBox{
+
+    width:min(700px,95%);
+
+    background:rgba(255,255,255,.85);
+
+    padding:40px 20px;
+
+    border-radius:30px;
+
+}
+
+.giftButtons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+#giftMessage{
+
+    min-height:40px;
+
+    margin-top:15px;
+
+}
+
+
+/* ================= LOVE PAGE ================= */
+
+#lovePage{
+
+    background:linear-gradient(135deg,#ff8ab3,#a18cd1);
+
+    color:white;
+
+}
+
+.loveBox{
+
+    width:min(700px,95%);
+
+    padding:40px 25px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.loveBox p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin:25px 0;
+
+}
+
+.heartAnimation{
+
+    font-size:80px;
+
+    animation:heartbeat 1s infinite;
+
+}
+
+@keyframes heartbeat{
+
+    0%,100%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.25);
+
+    }
+
+}
+
+
+/* ================= LETTER PAGE ================= */
+
+#letterPage{
+
+    background:linear-gradient(135deg,#ffd6e7,#fff0f6,#e7d8ff);
+
+    color:#4a1530;
+
+    justify-content:flex-start;
+
+}
+
+.letterPageContent{
+
+    width:min(700px,100%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.letterPageContent > h1{
+
+    margin-bottom:30px;
+
+}
+
+
+/* ================= ENVELOPE ================= */
+
+.envelope{
+
+    position:relative;
+
+    width:320px;
+
+    height:220px;
+
+    max-width:90vw;
+
+    margin:20px auto 60px;
+
+    cursor:pointer;
+
+    perspective:1000px;
+
+}
+
+.envelopeBack{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:#ff5c93;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+.envelopeFront{
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:75%;
+
+    background:#ff79a8;
+
+    clip-path:polygon(0 0,50% 65%,100% 0,100% 100%,0 100%);
+
+    z-index:4;
+
+    pointer-events:none;
+
+}
+
+.flap{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:#ff4c88;
+
+    clip-path:polygon(0 0,100% 0,50% 60%);
+
+    transform-origin:top;
+
+    transition:transform 1s;
+
+    z-index:5;
+
+    pointer-events:none;
+
+}
+
+.letter{
+
+    position:absolute;
+
+    left:5%;
+
+    bottom:15px;
+
+    width:90%;
+
+    height:180px;
+
+    background:white;
+
+    color:#333;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    overflow-y:auto;
+
+    transition:transform 1s;
+
+    transform:translateY(0);
+
+    z-index:3;
+
+    text-align:left;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.letter h2{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.letter p{
+
+    white-space:pre-line;
+
+    line-height:1.6;
+
+}
+
+
+/* ENVELOPE OPEN */
+
+.envelope.open .flap{
+
+    transform:rotateX(180deg);
+
+    z-index:1;
+
+}
+
+.envelope.open .letter{
+
+    transform:translateY(-160px);
+
+}
+
+
+/* ================= PHOTOS ================= */
+
+#memorySection{
+
+    display:none;
+
+    width:100%;
+
+    margin-top:80px;
+
+    text-align:center;
+
+}
+
+#memorySection.show{
+
+    display:block;
+
+    animation:fadeIn 1s;
+
+}
+
+#memorySection h2{
+
+    margin-bottom:20px;
+
+}
+
+#gallery{
+
+    display:block;
+
+    width:300px;
+
+    height:300px;
+
+    max-width:90vw;
+
+    object-fit:cover;
+
+    margin:0 auto;
+
+    border:6px solid white;
+
+    border-radius:25px;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(255,50,130,.45);
+
+}
+
+#photoNumber{
+
+    margin:15px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.letterButtons{
+
+    margin-top:30px;
+
+}
+
+
+/* ================= FINAL PAGE ================= */
+
+#finalPage{
+
+    background:radial-gradient(circle,#ff7eb3,#6a11cb);
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+.finalBox{
+
+    width:min(700px,95%);
+
+    z-index:2;
+
+}
+
+.finalBox p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin:25px 0;
+
+}
+
+.bigHeart{
+
+    font-size:100px;
+
+    animation:heartbeat 1s infinite;
+
+}
+
+#fireworks{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:500px){
+
+    .envelope{
+
+        width:280px;
+
+        height:200px;
+
+    }
+
+    .letter{
+
+        height:160px;
+
+        font-size:14px;
+
+    }
+
+    .envelope.open .letter{
+
+        transform:translateY(-145px);
+
+    }
+
+    #gallery{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+}
