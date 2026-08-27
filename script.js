@@ -572,7 +572,7 @@ const letterMessage = `Happy Raksha Bandhan Muski ❤️
 
 💌 Dear Muski,
 
-First of all, congratulations! 🎉 You have successfully survived having me as your brother for all these years. Honestly, I deserve an award for being this good and enduring and tolerating all your mistakes and mischieveousness and you deserve one for annoying me in the every possible way. 😂
+First of all, congratulations! 🎉 You have successfully survived having me as your brother for all these years. But Honestly, I deserve an award for being this good and enduring and tolerating all your mistakes and mischieveousness and you deserve one for annoying me in the every possible way. 😂
 We fight, we argue, we irritate each other, and sometimes I wonder how you manage to be so dramatic… but then I remember, you got that from me. 😌😂
 Jokes apart, having you as my sister is genuinely one of the best things in my life. You're not just my sister, you're my permanent partner in crime, free therapist, occasional headache, and full-time drama queen. ❤️
 I may tease you, steal your things, annoy you for no reason, and act like I don't care… but if anyone else tries to trouble you, bas naam bata dena. 😎😂
